@@ -23,8 +23,7 @@ function animateRing() {
 }
 animateRing();
 
-// Efek hover cursor
-var hoverTargets = document.querySelectorAll('a, button, .card, .hobby-card, .gallery-item, .family-card, .contact-link');
+var hoverTargets = document.querySelectorAll('a, button, .card, .hobby-card, .gallery-item, .family-card, .contact-link, .album-card, .photo-cell, .book-item, .photo-item');
 hoverTargets.forEach(function(el) {
   el.addEventListener('mouseenter', function() {
     cursor.classList.add('hovered');
@@ -71,28 +70,6 @@ revealEls.forEach(function(el) {
 
 
 // ===========================
-// GALLERY
-// ===========================
-function showAlbums() {
-  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
-  document.querySelector('.filter-btn[onclick="showAlbums()"]').classList.add('active');
-  document.getElementById('albumGrid').style.display = 'grid';
-  document.querySelectorAll('.album-detail').forEach(function(d) { d.classList.remove('visible'); });
-}
-function openAlbum(id) {
-  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
-  var btn = document.querySelector('.filter-btn[onclick="openAlbum(\'' + id + '\')"]');
-  if (btn) btn.classList.add('active');
-  document.getElementById('albumGrid').style.display = 'none';
-  document.querySelectorAll('.album-detail').forEach(function(d) { d.classList.remove('visible'); });
-  document.getElementById('detail-' + id).classList.add('visible');
-}
-function backToAlbums() {
-  showAlbums();
-}
-
-
-// ===========================
 // CONTACT FORM
 // ===========================
 var contactForm = document.getElementById('contactForm');
@@ -110,6 +87,7 @@ if (contactForm) {
     }, 3000);
   });
 }
+
 
 // ===========================
 // HOBBIES
@@ -158,6 +136,31 @@ if (audio) {
   });
   audio.addEventListener('ended', function() { playBtn.textContent = '▶'; });
 }
+
+
+// ===========================
+// GALLERY
+// ===========================
+function showAlbums() {
+  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelector('.filter-btn[onclick="showAlbums()"]').classList.add('active');
+  document.getElementById('albumGrid').style.display = 'grid';
+  document.querySelectorAll('.album-detail').forEach(function(d) { d.classList.remove('visible'); });
+}
+
+function openAlbum(id) {
+  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  var btn = document.querySelector('.filter-btn[onclick="openAlbum(\'' + id + '\')"]');
+  if (btn) btn.classList.add('active');
+  document.getElementById('albumGrid').style.display = 'none';
+  document.querySelectorAll('.album-detail').forEach(function(d) { d.classList.remove('visible'); });
+  document.getElementById('detail-' + id).classList.add('visible');
+}
+
+function backToAlbums() {
+  showAlbums();
+}
+
 
 // ===========================
 // HAMBURGER DRAWER
