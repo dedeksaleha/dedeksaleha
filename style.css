@@ -320,7 +320,6 @@ blockquote span { color: var(--brown-warm); }
 .about-cards { display: flex; flex-direction: column; gap: 16px; }
 
 /* Biodata Card */
-/* Biodata Card */
 .biodata-card {
   background: rgba(255,255,255,0.35);
   backdrop-filter: blur(18px);
@@ -993,9 +992,84 @@ footer {
 /* ===========================
    RESPONSIVE
 =========================== */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: none;
+  padding: 4px;
+  z-index: 101;
+}
+.hamburger-btn span {
+  width: 22px; height: 2px;
+  background: var(--green-deep);
+  border-radius: 2px;
+  display: block;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.hamburger-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger-btn.open span:nth-child(2) { opacity: 0; }
+.hamburger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.drawer-overlay {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 150;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.drawer-overlay.open { display: block; opacity: 1; }
+
+.drawer {
+  position: fixed;
+  top: 0; right: -280px;
+  width: 260px; height: 100%;
+  background: var(--cream);
+  z-index: 200;
+  padding: 70px 32px 32px;
+  box-shadow: -8px 0 32px rgba(45,74,62,0.12);
+  transition: right 0.35s cubic-bezier(0.4,0,0.2,1);
+  display: flex; flex-direction: column;
+}
+.drawer.open { right: 0; }
+
+.drawer-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: none; border: none;
+  font-size: 18px;
+  color: var(--text-mid);
+  cursor: none;
+  transition: color 0.2s;
+}
+.drawer-close:hover { color: var(--green-deep); }
+
+.drawer-links {
+  list-style: none;
+  display: flex; flex-direction: column;
+  gap: 6px;
+}
+.drawer-links a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  padding: 12px 0;
+  display: block;
+  border-bottom: 1px solid var(--brown-light);
+  transition: color 0.3s, padding-left 0.3s;
+}
+.drawer-links a:hover { color: var(--green-deep); padding-left: 6px; }
+
 @media (max-width: 768px) {
   nav { padding: 16px 20px; }
   .nav-links { display: none; }
+  .hamburger-btn { display: flex; }
   #hero, #about, #contact {
     grid-template-columns: 1fr;
     padding: 90px 24px 60px;
