@@ -158,3 +158,15 @@ if (audio) {
   });
   audio.addEventListener('ended', function() { playBtn.textContent = '▶'; });
 }
+
+// ===========================
+// HAMBURGER DRAWER
+// ===========================
+function toggleDrawer() {
+  var drawer = document.getElementById('drawer');
+  var overlay = document.getElementById('drawerOverlay');
+  var btn = document.getElementById('hamburgerBtn');
+  drawer.classList.toggle('open');
+  overlay.classList.toggle('open');
+  btn.classList.toggle('open');
+}
