@@ -20,15 +20,33 @@
 
   <!-- Navbar -->
   <nav id="navbar">
-    <div class="nav-logo">dee</div>
-    <ul class="nav-links">
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#hobbies">Hobi</a></li>
-      <li><a href="#family">Keluarga</a></li>
-      <li><a href="#gallery">Galeri</a></li>
-      <li><a href="#contact">Kontak</a></li>
-    </ul>
-  </nav>
+  <div class="nav-logo">namaku</div>
+  <ul class="nav-links">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#hobbies">Hobi</a></li>
+    <li><a href="#family">Keluarga</a></li>
+    <li><a href="#gallery">Galeri</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleDrawer()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Drawer overlay -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+
+<!-- Drawer -->
+<div class="drawer" id="drawer">
+  <button class="drawer-close" onclick="toggleDrawer()">✕</button>
+  <ul class="drawer-links">
+    <li><a href="#about" onclick="toggleDrawer()">Tentang</a></li>
+    <li><a href="#hobbies" onclick="toggleDrawer()">Hobi</a></li>
+    <li><a href="#family" onclick="toggleDrawer()">Keluarga</a></li>
+    <li><a href="#gallery" onclick="toggleDrawer()">Galeri</a></li>
+    <li><a href="#contact" onclick="toggleDrawer()">Kontak</a></li>
+  </ul>
+</div>
 
   <!-- Hero -->
   <section id="hero">
