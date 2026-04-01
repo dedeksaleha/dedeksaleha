@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedek saleha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Scroll bar atas -->
+  <div class="scroll-bar" id="scrollBar"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-logo">dee</div>
+    <ul class="nav-links">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#hobbies">Hobi</a></li>
+      <li><a href="#family">Keluarga</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-text">
+      <span class="hero-tag">🌿 Selamat Datang</span>
+      <h1>Halo, Aku <em>Dedek Saleha</em></h1>
+      <p class="hero-sub">Reader · Music Lover · Photographer</p>
+      <p class="hero-desc">Welcome to my personal space where I share my hobbies, my family, and small moments that shape who I am 🌱</p>
+      <div class="hero-btns">
+        <a href="#about" class="btn-primary">Kenali Aku</a>
+        <a href="#gallery" class="btn-outline">Lihat Galeri</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-blob">
+        <img src="foto.jpg" alt="Foto Aku" class="avatar-photo" />
+      </div>
+      <div class="badge b1">📚 Book Lover</div>
+      <div class="badge b2">🎵 Music Lover</div>
+      <div class="badge b3">📸 Photographer</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-left">
+      <p class="label">Siapa Aku</p>
+      <h2>Tentang <em>Diriku</em></h2>
+      <p class="section-desc">Sedikit cerita dari balik layar kehidupanku</p>
+      <blockquote>"I've been sleeping so long in a 20-year dark night. And now I see <span>Daylight.</span> I only see <span class="quote-accent">daylight.</span>"</blockquote>
+    </div>
+    <div class="about-cards">
+<div class="biodata-card">
+  <div class="bio-top">
+    <div class="bio-photo-ring">
+      <div class="bio-photo-wrap">
+        <img src="foto1.jpg" alt="Foto" class="biodata-photo" />
+      </div>
+    </div>
+    <div class="bio-name-block">
+      <p class="bio-name">Dedek Saleha</p>
+      <p class="bio-sub">Reader · Music Lover · Photographer</p>
+      <span class="bio-badge">✦ Let you know me</span>
+    </div>
+  </div>
+  <div class="bio-divider-h"></div>
+  <div class="bio-columns">
+    <!-- Kolom kiri -->
+    <div class="bio-col">
+      <div class="bio-row">
+        <div class="bio-icon-wrap">👤</div>
+        <div class="bio-row-text">
+          <span class="bio-label">Nama</span>
+          <span class="bio-value">Dedek Saleha</span>
+        </div>
+      </div>
+      <div class="bio-row">
+        <div class="bio-icon-wrap">📍</div>
+        <div class="bio-row-text">
+          <span class="bio-label">Tempat, Tgl Lahir</span>
+          <span class="bio-value">Edinburgh, 18 Sept</span>
+        </div>
+      </div>
+      <div class="bio-row" style="border-bottom:none;">
+        <div class="bio-icon-wrap">🎓</div>
+        <div class="bio-row-text">
+          <span class="bio-label">Pendidikan</span>
+          <span class="bio-value">Universitas Syiah Kuala</span>
+        </div>
+      </div>
+    </div>
+    <!-- Garis tengah -->
+    <div class="bio-divider-v"></div>
+    <!-- Kolom kanan -->
+    <div class="bio-col">
+      <div class="bio-row">
+        <div class="bio-icon-wrap">🏠</div>
+        <div class="bio-row-text">
+          <span class="bio-label">Anak ke-</span>
+          <span class="bio-value">3 dari 4 bersaudara</span>
+        </div>
+      </div>
+      <div class="bio-row">
+        <div class="bio-icon-wrap">✨</div>
+        <div class="bio-row-text">
+          <span class="bio-label">MBTI · Zodiak</span>
+          <span class="bio-value">ISTP · Virgo</span>
+        </div>
+      </div>
+      <div class="bio-row" style="border-bottom:none;">
+        <div class="bio-icon-wrap">🌙</div>
+        <div class="bio-row-text">
+          <span class="bio-label">Dreams</span>
+          <div class="bio-tags">
+            <span class="bio-tag">Kaya Raya</span>
+            <span class="bio-tag">Keliling dunia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies">
+  <div class="section-center">
+    <p class="label">Kesukaan</p>
+    <h2>Hobi & Passion</h2>
+    <p class="section-desc">Random things I love</p>
+  </div>
+
+  <div class="hobi-grid">
+    <div class="hobby-card" onclick="selectHobby('baca', this)">
+      <div class="hobby-title">Membaca</div>
+      <div class="hobby-sub">buku & novel favorit</div>
+      <div class="hobby-dot"></div>
+    </div>
+    <div class="hobby-card" onclick="selectHobby('musik', this)">
+      <div class="hobby-title">Mendengarkan Musik</div>
+      <div class="hobby-sub">lagu yang menemani hari-hari</div>
+      <div class="hobby-dot"></div>
+    </div>
+    <div class="hobby-card" onclick="selectHobby('foto', this)">
+      <div class="hobby-title">Fotografi</div>
+      <div class="hobby-sub">momen yang tertangkap lensa</div>
+      <div class="hobby-dot"></div>
+    </div>
+  </div>
+
+  <!-- Panel Membaca -->
+  <div class="hobby-panel" id="panel-baca">
+  <div class="hobby-inner">
+    <div class="book-grid">
+      <div class="book-item">
+        <img src="buku1.jpg" alt="Cover Buku 1" />
+        <div class="book-author">Tere Liye</div>
+      </div>
+      <div class="book-item">
+        <img src="buku2.jpg" alt="Cover Buku 2" />
+        <div class="book-author">Tere Liye</div>
+      </div>
+      <div class="book-item">
+        <img src="buku3.jpg" alt="Cover Buku 3" />
+        <div class="book-author">Tere Liye</div>
+      </div>
+      <div class="book-item">
+        <img src="buku4.jpg" alt="Cover Buku 4" />
+        <div class="book-author">Leila S. Chudori</div>
+      </div>
+      <div class="book-item">
+        <img src="buku5.jpg" alt="Cover Buku 5" />
+        <div class="book-author">Eka Kurniawan</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Panel Musik -->
+  <div class="hobby-panel" id="panel-musik">
+    <div class="audio-wrap">
+      <div class="audio-info">
+        <div class="audio-song">Berpayung Tuhan</div>
+        <div class="audio-artist">Nadin Amizah</div>
+      </div>
+      <div class="audio-player-wrap">
+        <div class="audio-controls">
+          <button class="play-btn" id="playBtn" onclick="togglePlay(event)">▶</button>
+          <div class="audio-progress-wrap">
+            <div class="progress-bar-bg" onclick="seekAudio(event)">
+              <div class="progress-bar-fill" id="progressFill"></div>
+            </div>
+            <div class="audio-time">
+              <span id="currentTime">0:00</span>
+              <span id="totalTime">0:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio id="audioPlayer" src="lagu.mp3"></audio>
+    </div>
+  </div>
+
+  <!-- Panel Fotografi -->
+  <div class="hobby-panel" id="panel-foto">
+  <div class="hobby-inner">
+    <div class="photo-grid">
+      <div class="photo-item"><img src="hobi1.jpg" alt="foto 1" /></div>
+      <div class="photo-item"><img src="hobi2.jpg" alt="foto 2" /></div>
+      <div class="photo-item"><img src="hobi3.jpg" alt="foto 3" /></div>
+      <div class="photo-item"><img src="hobi4.jpg" alt="foto 4" /></div>
+      <div class="photo-item"><img src="hobi5.jpg" alt="foto 5" /></div>
+      <div class="photo-item"><img src="hobi6.jpg" alt="foto 6" /></div>
+    </div>
+  </div>
+</div>
+</section>
+
+  <!-- Family -->
+  <section id="family">
+    <div class="section-center">
+      <p class="label">Orang Terkasih</p>
+      <h2>Keluargaku</h2>
+      <p class="section-desc">Yang Memeluk Raga Kecilku</p>
+    </div>
+    <div class="family-grid">
+      <div class="family-card">
+        <div class="family-avatar">👨</div>
+        <h3>Ayah</h3>
+        <span class="family-role">Kepala Keluarga</span>
+        <p>Sosok kuat yang selalu jadi pelabuhan aman.</p>
+        <p>Dan percaya kau ada di hatiku selamanya.</p>
+      </div>
+      <div class="family-card">
+        <div class="family-avatar">👩</div>
+        <h3>Ibu</h3>
+        <span class="family-role">Super Mom </span>
+        <p>Keras kepalaku sama denganmu. Nyawaku nyala karena denganmu.</p>
+      </div>
+      <div class="family-card">
+        <div class="family-avatar" style="font-size: 20px; letter-spacing: 2px;">👧👧👦</div>
+        <h3>Siblings</h3>
+        <span class="family-role">Partner in Crime 🌻</span>
+        <p>Kita hampir mati dan kau selamatkan aku, dan ku menyelamatkanmu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+  <div class="section-center">
+    <p class="label">Momen</p>
+    <h2>Galeri Hidupku</h2>
+    <p class="section-desc">Let me show you the shape of my heart</p>
+  </div>
+
+  <div class="gal-filter">
+  <button class="filter-btn active" onclick="showAlbums()">Semua</button>
+  <button class="filter-btn" onclick="openAlbum('alam')">Alam</button>
+  <button class="filter-btn" onclick="openAlbum('keluarga')">Keluarga</button>
+  <button class="filter-btn" onclick="openAlbum('teman')">Teman-timun</button>
+</div>
+
+  <!-- 3 Album -->
+  <div class="album-grid" id="albumGrid">
+    <div class="album-card" onclick="openAlbum('alam')">
+      <img src="coveralam.jpg" alt="Alam" class="album-cover-img" />
+      <div class="album-cover-placeholder">🌅</div>
+      <div class="album-overlay">
+        <div class="album-name">Alam</div>
+        <div class="album-count">6 foto</div>
+      </div>
+    </div>
+    <div class="album-card" onclick="openAlbum('keluarga')">
+      <img src="coverkeluarga.jpg" alt="Keluarga" class="album-cover-img" />
+      <div class="album-cover-placeholder">👨‍👩‍👧</div>
+      <div class="album-overlay">
+        <div class="album-name">Keluarga</div>
+        <div class="album-count">5 foto</div>
+      </div>
+    </div>
+    <div class="album-card" onclick="openAlbum('teman')">
+      <img src="coverteman.jpg" alt="Teman-timun" class="album-cover-img" />
+      <div class="album-cover-placeholder">👯</div>
+      <div class="album-overlay">
+        <div class="album-name">Teman-timun</div>
+        <div class="album-count">9 foto</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Alam -->
+  <div class="album-detail" id="detail-alam">
+    <button class="album-back" onclick="backToAlbums()">← Kembali ke Semua Album</button>
+    <div class="album-detail-title">Alam</div>
+    <div class="photo-grid-detail">
+      <div class="photo-cell"><img src="alam1.jpg" alt="alam 1" /></div>
+      <div class="photo-cell"><img src="alam2.jpg" alt="alam 2" /></div>
+      <div class="photo-cell"><img src="alam3.jpg" alt="alam 3" /></div>
+      <div class="photo-cell"><img src="alam4.jpg" alt="alam 4" /></div>
+      <div class="photo-cell"><img src="alam5.jpg" alt="alam 5" /></div>
+      <div class="photo-cell"><img src="alam6.jpg" alt="alam 6" /></div>
+    </div>
+  </div>
+
+  <!-- Detail Keluarga -->
+  <div class="album-detail" id="detail-keluarga">
+    <button class="album-back" onclick="backToAlbums()">← Kembali ke Semua Album</button>
+    <div class="album-detail-title">Keluarga</div>
+    <div class="photo-grid-detail">
+      <div class="photo-cell"><img src="keluarga1.jpg" alt="keluarga 1" /></div>
+      <div class="photo-cell"><img src="keluarga2.jpg" alt="keluarga 2" /></div>
+      <div class="photo-cell"><img src="keluarga3.jpg" alt="keluarga 3" /></div>
+      <div class="photo-cell"><img src="keluarga4.jpg" alt="keluarga 4" /></div>
+      <div class="photo-cell"><img src="keluarga5.jpg" alt="keluarga 5" /></div>
+    </div>
+  </div>
+
+  <!-- Detail Teman -->
+  <div class="album-detail" id="detail-teman">
+    <button class="album-back" onclick="backToAlbums()">← Kembali ke Semua Album</button>
+    <div class="album-detail-title">Teman-timun</div>
+    <div class="photo-grid-detail">
+      <div class="photo-cell"><img src="teman1.jpg" alt="teman 1" /></div>
+      <div class="photo-cell"><img src="teman2.jpg" alt="teman 2" /></div>
+      <div class="photo-cell"><img src="teman3.jpg" alt="teman 3" /></div>
+      <div class="photo-cell"><img src="teman4.jpg" alt="teman 4" /></div>
+      <div class="photo-cell"><img src="teman5.jpg" alt="teman 5" /></div>
+      <div class="photo-cell"><img src="teman6.jpg" alt="teman 6" /></div>
+      <div class="photo-cell"><img src="teman7.jpg" alt="teman 7"></div>
+      <div class="photo-cell"><img src="teman8.jpg" alt="teman 8"></div>
+      <div class="photo-cell"><img src="teman9.jpg" alt="teman 9"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="contact-left">
+    <p class="label">Sapa Aku</p>
+    <h2>Ayo <em>Terhubung</em> 🌱</h2>
+    <p>Aku selalu senang berkenalan! Jangan ragu menyapaku — siapa tau kita punya banyak kesamaan 😊</p>
+    <div class="contact-links">
+      <div class="contact-link">
+        <span class="contact-icon">📧</span>
+        <div>
+          <small>Email</small>
+          <strong>dedeksaleha@gmail.com</strong>
+        </div>
+      </div>
+      <a href="https://instagram.com/dedeksalehaa" target="_blank" class="contact-link">
+        <span class="contact-icon">📸</span>
+        <div>
+          <small>Instagram</small>
+          <strong>@dedeksalehaa</strong>
+        </div>
+      </a>
+      <div class="contact-link">
+        <span class="contact-icon">📍</span>
+        <div>
+          <small>Lokasi</small>
+          <strong>Edinburgh</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form class="contact-form" id="contactForm">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Nama</label>
+        <input type="text" placeholder="Nama kamu ✿" required />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="email@kamu.com" required />
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Pesan</label>
+      <textarea placeholder="Ceritakan sesuatu yang indah hari ini 🌿"></textarea>
+    </div>
+    <button type="submit" class="btn-primary">Kirim Pesan 🌸</button>
+  </form>
+</section>
+
+  <!-- Footer -->
+  <footer>
+  <p class="footer-logo"><em>Dedek Saleha</em></p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
